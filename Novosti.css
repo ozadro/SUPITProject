@@ -1,0 +1,280 @@
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+#fixedDiv{
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+#flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+    padding-left: 0;
+    background-color: black;
+    row-gap: 20px;
+    margin: -10px;
+    height: 85px;
+
+}
+
+.firstlist {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
+    padding-left: 40px;
+    height: 50px;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 5px;
+    flex: 75%;
+
+    font-size: 15px;
+}
+li
+{
+    padding-left: 50px;
+}
+img{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+@keyframes animatebottom
+{
+    from{bottom:-300px;opacity:0}
+    to{bottom:0;opacity:1}
+}
+.animiranidiv
+ {
+     position:relative;
+     animation:animatebottom 1.5s;
+
+}
+.kontejner
+{
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 625px;
+}
+.kontejner hr
+{
+    height: 3px;
+     border: none;
+     width: 50%;
+    background-color: orange;
+    box-shadow: 0.6px 0.6px 0.6px 0.6px yellow;
+}
+.bakcolorer
+{
+       margin-top: 40px;
+       width: 100%;
+       background-color: whitesmoke; 
+       padding-bottom: 50px;
+}
+
+.flexDiv
+{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    row-gap: 30px;
+
+}
+.contentpic{
+position: relative;
+text-align: center;
+width: 100%;
+}
+.lbltext{
+  position: absolute;
+  color: yellow;
+  left: 40%;
+  top: 30%;
+  font-weight:bold;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.pictext{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight:bold;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.lbltext3{
+  position: absolute;
+  color: yellow;
+  left: 40%;
+  top: 40%;
+  font-weight:bold;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.pictext3{
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight:bold;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.newpic{
+border-radius: 150px;
+border: solid cyan 10px;
+height: 250px;
+width: 250px;
+object-fit: cover;
+}
+@keyframes animatezoom
+{
+    from{transform:scale(0)} 
+    to{
+        transform:scale(1)}
+}
+.picdiv1, .picdiv2, .picdiv3
+{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-top: 50px;
+  animation: animatezoom 1s;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: -10px;
+}
+footer  img
+{
+
+    margin-bottom: -20px;
+
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+
+}
+.fp
+{
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    color: white;
+
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.sp
+{
+    font-weight: bold;
+    font-size: 2.5em;
+    top: 40%;
+    left: 45%;
+    position: absolute;
+    color: rgba(139, 22, 7, 0.979);
+}
+/***********MODAL**********/
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+ 
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 60%;
+  }
+ 
+  .close {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  input[type=text],input[type=email] ,select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }

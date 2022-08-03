@@ -1,0 +1,65 @@
+@media screen  and (min-widh: 1200px) {
+    
+}
+@media screen and (min-width: 768px) and (max-width:1200px) {
+    .secondlist{
+        visibility: hidden;
+    }
+}
+@media  screen and (max-width: 768px) {
+ 
+    /**head**/
+    #fixedDiv
+    {
+        width: 50%;
+        height: 50%;
+    }
+    .slika{
+        width: 30px;
+        height: 30px;
+    }
+    .img{
+        width: 30px;
+        height: 30px;
+    }
+    .listica{
+        font-size: 80%;
+    }
+    .secondlist{
+        visibility: hidden;
+    }
+
+    /**body**/
+    .Kampus{
+        height: 300px;
+    }
+    #Vrijednosti{
+        font-size: 20px;
+    }
+    .s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8{
+        width: 30%;
+        height: 30%;
+        object-fit: cover;
+
+    }
+    .flex1 h2,  .flex2 h2, .flex3 h2{
+        
+        font-size: 15px;
+    }
+
+
+    /****/
+    p{
+        font-size: 70%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .flex1 p, .flex2 p, .flex3 p{
+        font-size: 60%;
+    }
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Novosti.css">
+  <link rel="icon" type="image/x-icon" href="img/Algebra-logo.png">
+  <title>SUPIT-Projektni zadatak</title>
+</head>
+<body>
+  <div id="fixedDiv">
+    <nav id="flexbox">
+      <ul class="firstlist">
+
+        <li><img src="img\Algebra-logo.png" alt=""></li>
+        <li><a href="Main.html">Početna</a></li>
+        <li><a href="Onama.html">O nama</a></li>
+        <li><a href="Novosti.html">Novosti</a></li>
+        <li><a href="Nastavniplan.html">Nastavni plan</a></li>
+        <li><a href="#" id="kontakti">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <div class="kontejner">
+    <div class="animiranidiv">
+      <h1>Novosti</h1>
+      <hr>
+    </div>
+    <div class="bakcolorer">
+      <div class="flexDiv">
+        <div class="picdiv1">
+          <div class="contentpic">
+            <a class="flex1" href="WorldSkills.html">
+              <label class="lbltext">28.08.2019</label>
+              <p class="pictext">Student Josip Stanešić 12.
+                je sistemaš svijeta i dobitnik medalje izvrsnosti na natjecanju WorldSkills Kazan 2019.</p>
+              <img class="newpic" src="img/novost1.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="picdiv2">
+          <div class="contentpic">
+            <a class="flex1" href="StipNatjecaj.html">
+              <label class="lbltext">22.07.2019.</label>
+              <p class="pictext">Nagrađujemo izvrsnost:
+                Objavljujemo dobitnike stipendijskog natječaja šk.god.2018./2019.!</p>
+              <img class="newpic" src="img/novost2.jpg" alt="">
+            </a>
+
+          </div>
+        </div>
+        <div class="picdiv3">
+          <div class="contentpic">
+            <a class="flex1" href="Junior.html">
+              <label class="lbltext3">18.04.2019.</label>
+              <p class="pictext3">Digitalno Junior ljeto</p>
+              <img class="newpic" src="img/novost3.jpg" alt="">
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <img src="img/zaiskri-bg.jpg" alt="">
+    <p class="fp">
+      BUDI IZVRSTAN U ONOM ŠTO VOLIŠ
+    </p>
+
+    <p class="sp">ZAISKRI</p>
+
+  </footer>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div id="divForma">
+        <form target="_blank"  action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="get">
+          <label style="font-size: 50px; color: lightskyblue;"> Kontaktirajte nas</label>
+          <br> <br>
+          <label for="">Puno ime: <input type="text" name="name"></label>
+          <label for="">E-mail: <input type="email" name="email" id=""></label>
+          <label for="">Važnost poruke: <select name="importance"> <option  >Visoka</option> <option  >Niska</option></select>
+          <label for="">Vaša Poruka: <input type="text" name="message" id=""></label>
+          <label for="">Primaj newsletter <input type="checkbox" name="newsletter"></label>
+          <br> <br> <br>
+
+            <input type="submit" value="Predaj">
+            <input type="button" class="close" value="Odustani">
+        </form>
+      </div>
+
+</body>
+<script src="KontakJs.js"></script>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="jquery-ui-themes-1.13.1/themes/flick/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/Algebra-logo.png">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1/css/all.css">
+    <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="NastavniplanCSS.css">
+    <title>SUPIT-Projektni zadatak</title>
+</head>
+
+<body>
+    <div id="fixedDiv">
+    <nav id="fleksboks">
+
+        <ul class="prvalista">
+
+            <li class="pikture"><img class="img" src="img\Algebra-logo.png" alt=""></li>
+            <li><a class="ankor" href="Main.html">Početna</a></li>
+            <li><a class="ankor" href="Onama.html">O nama</a></li>
+            <li><a class="ankor" href="Novosti.html">Novosti</a></li>
+            <li><a class="ankor" href="Nastavniplan.html">Nastavni plan</a></li>
+            <li><a class="ankor" id="kontakti" href="#">Kontakt</a></li>
+        </ul>
+</div>
+
+    </nav>
+
+
+    <div class="kontejner">
+        <div>
+          <h1>Nastavni Plan</h1>
+          <hr>
+        </div>
+        <div class="pozadina">
+          <div class="fleksDiv">
+            <div>
+              <div class="kontentpik">
+                <div class="box">
+                    <form name="search">
+
+                        <input type="text" id="JsonParser" class="input" name="txt" 
+                        onmouseout="document.search.txt.value = ''">
+                    </form>
+                        <i class="fas fa-search"></i>
+                </div>
+                
+              </div>
+            </div>
+            <div class="slikaDiv1">
+              <div class="kontentpik">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>
+                                Kolegij
+                            </th>
+                            <th>
+                                ECTS
+                            </th>
+                            <th>
+                                Sati
+                            </th>
+                            <th>
+                                P
+                            </th>
+                            <th>
+                                V
+                            </th>
+                            <th>
+                                Tip
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="Pasta">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th> Ukupno: </th>
+                            <th id="ECTSpast">
+        
+                            </th>
+                            <th id="Satipast">
+        
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+     
+
+    <footer class="footer1">
+        <img src="img/zaiskri-bg.jpg" alt="">
+        <p class="fp1">
+            BUDI IZVRSTAN U ONOM ŠTO VOLIŠ
+        </p>
+
+        <p class="sp1">ZAISKRI</p>
+
+    </footer>
+
+</body>
+<script src="NastavniplanJS.js"></script>
+<script src="KontakJs.js"></script>
+
+</html>

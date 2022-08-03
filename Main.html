@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="MainCss.css">
+  <link rel="icon" type="image/x-icon" href="img/Algebra-logo.png">
+  <link rel="stylesheet" href="ReponseCss.css">
+  <title>SUPIT-Projektni zadatak</title>
+</head>
+
+<body>
+  <div id="fixedDiv">
+  <nav id="fleksboks">
+
+    <ul class="prvalista">
+
+      <li class="picture"><img class="slika" src="img\Algebra-logo.png" alt=""></li>
+      <li><a class="listica" href="Main.html">Početna</a></li>
+      <li><a class="listica" href="Onama.html">O nama</a></li>
+      <li><a class="listica" href="Novosti.html">Novosti</a></li>
+      <li><a class="listica" href="Nastavniplan.html">Nastavni plan</a></li>
+      <li><a class="listica" id="kontakti" href="#">Kontakt</a></li>
+    </ul>
+
+
+  </nav>
+  </div>
+  <video autoplay muted loop id="myVideo">
+    <source src="video\typingOnlaptop.mp4" type="video/mp4">
+  </video>
+  <div class="overlay">
+    <h1 >Budi Izvrstan u onom što
+      <span class="typer" data-owner="typer-start" data-colors="white"  data-words="voliš!,vidiš." data-delay="100" data-loop="1"></span>
+      <span class="cursor" data-owner="typer-start"></span>
+      <br>  
+      <span class="typer" data-colors="darkred" data-words="ZAISKRI." data-delay="500" data-loop="1"></span>
+     
+    </h1>
+  </div>
+ 
+ 
+
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div id="divForma">
+        <form target="_blank"  action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="get">
+          <label style="font-size: 50px; color: lightskyblue;"> Kontaktirajte nas</label>
+          <br> <br>
+          <label for="">Puno ime: <input type="text" name="name"></label>
+          <label for="">E-mail: <input type="email" name="email" id=""></label>
+          <label for="">Važnost poruke: <select name="importance"> <option  >Visoka</option> <option  >Niska</option></select>
+          <label for="">Vaša Poruka: <input type="text" name="message" id=""></label>
+          <label for="">Primaj newsletter <input type="checkbox" name="newsletter"></label>
+          <br> <br> <br>
+
+            <input type="submit" value="Predaj">
+            <input type="button" class="close" value="Odustani">
+        </form>
+      </div>
+
+</body>
+<script src="KontakJs.js"></script>
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+</html>
